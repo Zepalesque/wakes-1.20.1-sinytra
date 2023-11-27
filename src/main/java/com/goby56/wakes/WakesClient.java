@@ -29,6 +29,7 @@ public class WakesClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		LOGGER.info("Registering client specific stuff for " + MOD_ID);
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(container -> METADATA = container.getMetadata());
 
 		// Mod configs

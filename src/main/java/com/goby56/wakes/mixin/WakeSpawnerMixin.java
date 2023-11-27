@@ -92,6 +92,7 @@ public abstract class WakeSpawnerMixin implements ProducesWake {
 
 	@Override
 	public void setWakeParticle(Particle particle) {
+		System.out.println(particle);
 		this.wakeParticle = particle;
 	}
 
